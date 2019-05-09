@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="WFEditMaster.master.cs" Inherits="Infra.WorkflowEngine.WebUI.WFEditMaster" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <base target="_self" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <link href="CSS/WFStyles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder ID="cph1" runat="server"></asp:ContentPlaceHolder>
+        <div dir="rtl" style="text-align:right">
+            <telerik:RadToolBar runat="server" ID="tblButtons" onbuttonclick="tblButtons_ButtonClick" OnClientButtonClicked="ToolbarButtonClicked">
+                <Items>
+                    <telerik:RadToolBarButton ID="UpdateButton" Text="ثبت" runat="server" Width="100px" CommandName="Update" ImageUrl="~/WF/CSS/images/disk.png" PostBack="true"></telerik:RadToolBarButton>
+                    <telerik:RadToolBarButton ID="CancelButton" Text="لغو" runat="server" Width="100px" CommandName="Cancel" ImageUrl="~/WF/CSS/images/cancel.png" PostBack="false"></telerik:RadToolBarButton>
+                </Items>
+            </telerik:RadToolBar>
+        </div>
+    </form>
+    <script type="text/javascript">
+        function ToolbarButtonClicked(sender, e) {
+            var cmd = e.get_item().get_commandName();
+            if (cmd == "Cancel") {
+                CloseWindow();
+            }
+        }
+
+        function CloseWindow() {
+            window.close();
+        }
+    </script>
+    </body>
+</html>

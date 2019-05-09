@@ -1,0 +1,244 @@
+﻿*
+{
+    font-family: Tahoma;
+    font-size: 8pt;
+}
+body
+{
+    font-family: Tahoma;
+    direction: ltr;
+}
+*.MyPanel
+{
+    border: 0px none inherit;
+    direction: rtl;
+    border-spacing: 0;
+    border-collapse: collapse;
+    empty-cells: show;
+    width: 100%;
+}
+*.MyPanelLabel
+{
+    text-align: right;
+    font-family: Tahoma;
+    font-size: 8.5pt;
+    font-weight: bold;
+    padding-right: 12px;
+    height: 15px;
+    vertical-align: text-top;
+}
+*.MyPanelTopRight
+{
+    background-image: url('../Images/BorderTopRight.png');
+    background-color: White;
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+}
+*.MyPanelTop
+{
+    background-image: url('../Images/BorderTop.png');
+    background-color: White;
+    background-position: center;
+    background-repeat: repeat-x;
+    height: 12px;
+}
+*.MyPanelTopLeft
+{
+    background-image: url('../Images/BorderTopLeft.png');
+    background-color: White;
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+}
+*.MyPanelRight
+{
+    background-image: url('../Images/BorderRight.png');
+    background-color: White;
+    background-position: left;
+    background-repeat: repeat-y;
+    width: 12px;
+}
+*.MyPanelCenter
+{
+    background-color: #E4E4E4;
+}
+*.MyPanelBodyTable
+{
+    border: 0px none inherit;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    empty-cells: show;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+*.MyPanelBodyCell
+{
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    vertical-align: middle;
+}
+*.MyPanelLeft
+{
+    background-image: url('../Images/BorderLeft.png');
+    background-color: White;
+    background-position: right;
+    background-repeat: repeat-y;
+    width: 12px;
+}
+*.MyPanelBottomRight
+{
+    background-image: url('../Images/BorderBottomRight.png');
+    background-color: White;
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+}
+*.MyPanelBottom
+{
+    background-image: url('../Images/BorderBottom.png');
+    background-color: White;
+    background-position: center;
+    background-repeat: repeat-x;
+    width: 200px;
+    height: 12px;
+}
+*.MyPanelBottomLeft
+{
+    background-image: url('../Images/BorderBottomLeft.png');
+    background-color: White;
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+}
+/*--------------------drafts--------------*/
+fieldset
+{
+    margin: 1em 0px;
+    padding: 0em;
+    border: 1px solid #ccc;
+    background-color: #CCD;
+}
+.listBox
+{
+    margin: 1em 0px;
+    padding: 0em;
+    border: 1px hidden #ccc;
+    background-color: inherit;
+    height: 380px;
+}
+fieldset p
+{
+    margin: 2px 12px 10px 10px;
+}
+
+legend
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+    color: Green;
+}
+
+input[type="text"]
+{
+    border: 1px solid #CCC;
+    padding: 1px 1px 1px 1px;
+    font-size: 8pt;
+}
+select
+{
+    height: 20px;
+    direction: rtl;
+}
+input[type="password"]
+{
+    width: 200px;
+    border: 1px solid #CCC;
+}
+
+#userInfoContent
+{
+    top: 100px;
+}
+
+#changePassword
+{
+    padding: 0 0 15px;
+    width: 400px;
+}
+
+.MasterButton:selected
+{
+    border: 0px Solid Silver;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    background-image: url('../Images/greenspacer2.png');
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-color: White;
+    color: White;
+    font-size: 8;
+    font-family: Tahoma;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    vertical-align: middle;
+    height: 30px;
+    padding: 8px 0 0 10px;
+}
+.listboxMargin
+{
+    margin:20px;
+}
+
+.hidden
+{
+    display:none;
+}
+
+.PageHeader
+{
+    text-align:right;
+    direction:rtl;
+    font-family:Tahoma;
+    font-size:x-large;
+}
+
+.waitingIcon
+{
+    width:16px;
+    height:16px;
+    background-image:url('images/hourglass.png');
+}
+.completeIcon
+{
+    width:16px;
+    height:16px;
+    background-image:url('images/accept.png');
+}
+.noneedIcon
+{
+    width:16px;
+    height:16px;
+    background-image:url('images/bullet_black.png');
+}
+.cancelIcon
+{
+    width:16px;
+    height:16px;
+    background-image:url('images/cancel.png');
+}
+.errorIcon
+{
+    width:16px;
+    height:16px;
+    background-image:url('images/delete.png');
+}
