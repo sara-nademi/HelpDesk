@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="2">
+      <TopTenRequset Ref="2" type="Stimulsoft.Report.Dictionary.StiBusinessObject" isKey="true">
+        <Alias>TopTenReTopTenRequsetquset</Alias>
+        <BusinessObjects isList="true" count="0" />
+        <Category>TopTenRequset</Category>
+        <Columns isList="true" count="3">
+          <value>ReqestTypID,System.String</value>
+          <value>requestTypeCount,System.String</value>
+          <value>RequestType,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Guid>c9cee51eb5a140fea145610ab19c4ffc</Guid>
+        <Name>TopTenRequset</Name>
+      </TopTenRequset>
+      <TopTenUser Ref="3" type="Stimulsoft.Report.Dictionary.StiBusinessObject" isKey="true">
+        <Alias>TopTeTopTenUsernUser</Alias>
+        <BusinessObjects isList="true" count="0" />
+        <Category>TopTenUser</Category>
+        <Columns isList="true" count="3">
+          <value>InsertUser,System.String</value>
+          <value>InsertUserCount,System.String</value>
+          <value>Title,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Guid>3e4ef3bc542842d7b7b05f545a1c79cf</Guid>
+        <Name>TopTenUser</Name>
+      </TopTenUser>
+    </BusinessObjects>
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="0" />
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="1">
+      <value>,TodayDate,TodayDate,System.String,,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="4" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="7">
+        <PageHeaderBand1 Ref="5" type="PageHeaderBand" isKey="true">
+          <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.2,7.72,1.2</ClientRectangle>
+          <Components isList="true" count="5">
+            <Image1 Ref="6" type="Image" isKey="true">
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>0.2,0.1,1.76,0.7</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Guid>ce154883b73a4e028e7f2104dcab9cde</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Image>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</Image>
+              <Name>Image1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <VertAlignment>Center</VertAlignment>
+            </Image1>
+            <HeaderUserDS_Lastname Ref="7" type="Text" isKey="true">
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>3.2,0.1,2.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,10,Bold</Font>
+              <Guid>b51949543d634af2af551e01317b9779</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderUserDS_Lastname</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>گزارش ده خرابی اول و ده کاربر اول</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderUserDS_Lastname>
+            <Text15 Ref="8" type="Text" isKey="true">
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>0.2,0.8,1.8,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Zar,9</Font>
+              <Guid>c5d227a580584245a5d8f8283e6a6470</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>سامانه میز امداد نهاد ریاست جمهوری</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text15>
+            <Text3 Ref="9" type="Text" isKey="true">
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>3,0.7,2.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,10,Bold</Font>
+              <Guid>fc32ee021a4e4b31a20759cfa4c730e2</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{TodayDate}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <Panel1 Ref="10" type="Stimulsoft.Report.Components.StiPanel" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[225:225:225]</Brush>
+              <ClientRectangle>5.9,0.1,1.7,1</ClientRectangle>
+              <Components isList="true" count="2">
+                <Text22 Ref="11" type="Text" isKey="true">
+                  <Brush>EmptyBrush</Brush>
+                  <ClientRectangle>0.1,0.1,0.8,0.2</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>B Nazanin,10,Bold</Font>
+                  <Guid>22dc6c8112fe472aa96d3c3fed0dba31</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text22</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="10" />
+                  <Text>: نام گزارش</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text22>
+                <Text23 Ref="12" type="Text" isKey="true">
+                  <Brush>EmptyBrush</Brush>
+                  <ClientRectangle>0.1,0.6,0.8,0.2</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>B Nazanin,10,Bold</Font>
+                  <Guid>c33c60b1dbb0444490d7db9b9c55f52e</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text23</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="10" />
+                  <Text>: تاریخ گزارش</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+                  <Type>Expression</Type>
+                </Text23>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Guid>1e175d113dce4d89bed340e179b5f348</Guid>
+              <Name>Panel1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+            </Panel1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>c1377e99608244a5a3cc285819e62f0a</Guid>
+          <Name>PageHeaderBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </PageHeaderBand1>
+        <Text2 Ref="13" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>6.3,6,1.2,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,12,Bold</Font>
+          <Guid>916f0162df254c188382dd4987138ef8</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text2</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>نمودار ده کاربر اول</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text2>
+        <Chart2 Ref="14" type="Stimulsoft.Report.Chart.StiChart" isKey="true">
+          <Area Ref="15" type="Stimulsoft.Report.Chart.StiPieArea" isKey="true">
+            <BorderColor>95, 95, 95</BorderColor>
+            <Brush>GradientBrush,[255:255:255],[255:255:255],90</Brush>
+            <Chart isRef="14" />
+          </Area>
+          <Brush>[255:255:255]</Brush>
+          <BusinessObjectGuid>3e4ef3bc542842d7b7b05f545a1c79cf</BusinessObjectGuid>
+          <ClientRectangle>0.1,6,5.9,3.8</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <ConstantLines isList="true" count="0" />
+          <CustomStyleName />
+          <DataSourceName isNull="true" />
+          <Filters isList="true" count="0" />
+          <HorSpacing>1</HorSpacing>
+          <Legend Ref="16" type="Stimulsoft.Report.Chart.StiLegend" isKey="true">
+            <BorderColor>95, 95, 95</BorderColor>
+            <Brush>GradientBrush,[255:255:255],[255:255:255],90</Brush>
+            <Chart isRef="14" />
+            <Columns>10</Columns>
+            <Font>Arial,8</Font>
+            <LabelsColor>95, 95, 95</LabelsColor>
+            <MarkerSize>10, 10</MarkerSize>
+            <TitleColor>95, 95, 95</TitleColor>
+            <TitleFont>Arial,14.25,Bold,Point,False,0</TitleFont>
+          </Legend>
+          <Name>Chart2</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Series isList="true" count="1">
+            <Item14 Ref="17" type="Stimulsoft.Report.Chart.StiPieSeries" isKey="true">
+              <AutoSeriesColorDataColumn>TopTenUser.InsertUser</AutoSeriesColorDataColumn>
+              <AutoSeriesKeyDataColumn>TopTenUser.InsertUser</AutoSeriesKeyDataColumn>
+              <AutoSeriesTitleDataColumn>TopTenUser.Title</AutoSeriesTitleDataColumn>
+              <BorderColor>28, 45, 65</BorderColor>
+              <Brush>GlareBrush,[128:145:165],[178:195:215],0,0.5,1</Brush>
+              <Chart isRef="14" />
+              <Conditions isList="true" count="0" />
+              <Filters isList="true" count="0" />
+              <SeriesLabels Ref="18" type="Stimulsoft.Report.Chart.StiCenterAxisLabels" isKey="true">
+                <BorderColor>95, 95, 95</BorderColor>
+                <Brush>WhiteSmoke</Brush>
+                <Chart isRef="14" />
+                <Font>Arial,15</Font>
+                <LabelColor>95, 95, 95</LabelColor>
+                <MarkerSize>8, 6</MarkerSize>
+                <ValueTypeSeparator>-</ValueTypeSeparator>
+              </SeriesLabels>
+              <ShowInLegend>False</ShowInLegend>
+              <Title>Series 1</Title>
+              <ValueDataColumn>TopTenUser.InsertUserCount</ValueDataColumn>
+            </Item14>
+          </Series>
+          <SeriesLabels Ref="19" type="Stimulsoft.Report.Chart.StiOutsidePieLabels" isKey="true">
+            <BorderColor>95, 95, 95</BorderColor>
+            <Brush>WhiteSmoke</Brush>
+            <Chart isRef="14" />
+            <Font>Arial,10</Font>
+            <LabelColor>95, 95, 95</LabelColor>
+            <LegendValueType>SeriesTitleValue</LegendValueType>
+            <LineColor>95, 95, 95</LineColor>
+            <MarkerSize>8, 6</MarkerSize>
+            <ValueType>SeriesTitleValue</ValueType>
+            <ValueTypeSeparator>-</ValueTypeSeparator>
+          </SeriesLabels>
+          <SeriesLabelsConditions isList="true" count="0" />
+          <Sort isList="true" count="0" />
+          <Strips isList="true" count="0" />
+          <Style Ref="20" type="Stimulsoft.Report.Chart.StiStyle02" isKey="true" />
+          <Title Ref="21" type="Stimulsoft.Report.Chart.StiChartTitle" isKey="true">
+            <Brush>[95:95:95]</Brush>
+            <Font>Tahoma,12,Bold</Font>
+          </Title>
+          <VertSpacing>1</VertSpacing>
+        </Chart2>
+        <Text1 Ref="22" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>6.2,2.3,1.3,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>B Nazanin,12,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>نمودار ده خرابی اول</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text1>
+        <Chart1 Ref="23" type="Stimulsoft.Report.Chart.StiChart" isKey="true">
+          <Area Ref="24" type="Stimulsoft.Report.Chart.StiPieArea" isKey="true">
+            <BorderColor>95, 72, 29</BorderColor>
+            <Brush>GradientBrush,[255:255:255],[255:255:219],90</Brush>
+            <Chart isRef="23" />
+          </Area>
+          <Brush>[255:255:255]</Brush>
+          <BusinessObjectGuid>c9cee51eb5a140fea145610ab19c4ffc</BusinessObjectGuid>
+          <ClientRectangle>0.1,2.3,5.9,3.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <ConstantLines isList="true" count="0" />
+          <CustomStyleName />
+          <DataSourceName isNull="true" />
+          <Filters isList="true" count="0" />
+          <GrowToHeight>True</GrowToHeight>
+          <HorSpacing>1</HorSpacing>
+          <Legend Ref="25" type="Stimulsoft.Report.Chart.StiLegend" isKey="true">
+            <BorderColor>95, 72, 29</BorderColor>
+            <Brush>GradientBrush,[255:255:255],[255:242:199],90</Brush>
+            <Chart isRef="23" />
+            <Columns>20</Columns>
+            <Font>Arial,8</Font>
+            <HorSpacing>10</HorSpacing>
+            <LabelsColor>95, 72, 29</LabelsColor>
+            <MarkerSize>10, 10</MarkerSize>
+            <TitleColor>95, 72, 29</TitleColor>
+            <TitleFont>Arial,14,Bold</TitleFont>
+          </Legend>
+          <Name>Chart1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Series isList="true" count="1">
+            <Item17 Ref="26" type="Stimulsoft.Report.Chart.StiPieSeries" isKey="true">
+              <AutoSeriesColorDataColumn>TopTenRequset.ReqestTypID</AutoSeriesColorDataColumn>
+              <AutoSeriesKeyDataColumn>TopTenRequset.ReqestTypID</AutoSeriesKeyDataColumn>
+              <AutoSeriesTitleDataColumn>TopTenRequset.RequestType</AutoSeriesTitleDataColumn>
+              <BorderColor>94, 17, 0</BorderColor>
+              <Brush>GlareBrush,[144:67:3],[194:117:53],0,0.5,1</Brush>
+              <Chart isRef="23" />
+              <Conditions isList="true" count="0" />
+              <Filters isList="true" count="0" />
+              <Format isNull="true" />
+              <SeriesLabels Ref="27" type="Stimulsoft.Report.Chart.StiCenterAxisLabels" isKey="true">
+                <BorderColor>95, 72, 29</BorderColor>
+                <Brush>Wheat</Brush>
+                <Chart isRef="23" />
+                <Font>Arial,7</Font>
+                <LabelColor>95, 72, 29</LabelColor>
+                <MarkerSize>8, 6</MarkerSize>
+                <ValueTypeSeparator>-</ValueTypeSeparator>
+              </SeriesLabels>
+              <ShowInLegend>False</ShowInLegend>
+              <SortBy>Value</SortBy>
+              <SortDirection>Descending</SortDirection>
+              <Title>Series 1</Title>
+              <ValueDataColumn>TopTenRequset.requestTypeCount</ValueDataColumn>
+            </Item17>
+          </Series>
+          <SeriesLabels Ref="28" type="Stimulsoft.Report.Chart.StiTwoColumnsPieLabels" isKey="true">
+            <BorderColor>95, 72, 29</BorderColor>
+            <Brush>Wheat</Brush>
+            <Chart isRef="23" />
+            <Font>Arial,8,Bold</Font>
+            <Format isNull="true" />
+            <LabelColor>95, 72, 29</LabelColor>
+            <LegendValueType>SeriesTitleValue</LegendValueType>
+            <LineColor>95, 72, 29</LineColor>
+            <MarkerSize>8, 6</MarkerSize>
+            <ValueType>SeriesTitleValue</ValueType>
+            <ValueTypeSeparator>-</ValueTypeSeparator>
+          </SeriesLabels>
+          <SeriesLabelsConditions isList="true" count="0" />
+          <Sort isList="true" count="0" />
+          <Strips isList="true" count="0" />
+          <Style Ref="29" type="Stimulsoft.Report.Chart.StiStyle01" isKey="true" />
+          <Title Ref="30" type="Stimulsoft.Report.Chart.StiChartTitle" isKey="true">
+            <Brush>[95:72:29]</Brush>
+            <Font>Tahoma,12,Bold</Font>
+          </Title>
+          <VertSpacing>1</VertSpacing>
+        </Chart1>
+        <DataBand2 Ref="31" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid>3e4ef3bc542842d7b7b05f545a1c79cf</BusinessObjectGuid>
+          <ClientRectangle>0,1.8,7.72,0</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text4 Ref="32" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,1,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="4" />
+              <Parent isRef="31" />
+              <Text>{TopTenRequset.requestTypeCount}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text4>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName isNull="true" />
+          <Filters isList="true" count="0" />
+          <MasterComponent isRef="14" />
+          <Name>DataBand2</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </DataBand2>
+        <DataBand1 Ref="33" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid>c9cee51eb5a140fea145610ab19c4ffc</BusinessObjectGuid>
+          <ClientRectangle>0,2.2,7.72,0</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName isNull="true" />
+          <Filters isList="true" count="0" />
+          <MasterComponent isRef="23" />
+          <Name>DataBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>9c5a0a0ece8c48999d335fe34285df65</Guid>
+      <Margins>0.39,0.39,0.39,0.39</Margins>
+      <Name>Page1</Name>
+      <PageHeight>11</PageHeight>
+      <PageWidth>8.5</PageWidth>
+      <PaperSize>Letter</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="34" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="35" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>7/11/2012 9:11:12 PM</ReportChanged>
+  <ReportCreated>5/19/2012 11:15:47 AM</ReportCreated>
+  <ReportFile>D:\HoushmandProject\Motaghi\HelpDesk\SourceCode\Helpdesk.WebUI\Report\TopTenRequestsAndUsersReport.mrt</ReportFile>
+  <ReportGuid>48af1a30db5644fe9b69513bf6c813ae</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2011.3.1200</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+        #endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>
