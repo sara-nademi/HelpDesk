@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{39C82F9A-E628-481F-8430-809B642CC580}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Helpdesk.BLL</RootNamespace>
+    <AssemblyName>Helpdesk.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C5">
+      <HintPath>..\..\Refrences\Quartz\C5.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging">
+      <HintPath>..\..\Refrences\Quartz\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Log4Net">
+      <HintPath>..\..\Refrences\Quartz\Common.Logging.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\Refrences\Quartz\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz">
+      <HintPath>..\..\Refrences\Quartz\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Topshelf">
+      <HintPath>..\..\Refrences\Quartz\Topshelf.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AttachFileManager.cs" />
+    <Compile Include="Base Class\ContextFactory.cs" />
+    <Compile Include="Base Class\ManagerBase.cs" />
+    <Compile Include="AttachmentManager.cs" />
+    <Compile Include="CheckListManeger.cs" />
+    <Compile Include="CheckListTemplateManager.cs" />
+    <Compile Include="CheckListInstanceManeger.cs" />
+    <Compile Include="Convert\IDataImport.cs" />
+    <Compile Include="Convert\LocationImport.cs" />
+    <Compile Include="Convert\OrganizationChartImport.cs" />
+    <Compile Include="Convert\PersonalListImport.cs" />
+    <Compile Include="DeviceSpecHistoryManager.cs" />
+    <Compile Include="DeviceSpecManager.cs" />
+    <Compile Include="SpecCategoryManager.cs" />
+    <Compile Include="RequestHistoryManager.cs" />
+    <Compile Include="LogManager.cs" />
+    <Compile Include="GuideBoardManager.cs" />
+    <Compile Include="GuideDeviceFileManager.cs" />
+    <Compile Include="DeviceTypeManager.cs" />
+    <Compile Include="GuideDeviceManager.cs" />
+    <Compile Include="GuideHelpFileManager.cs" />
+    <Compile Include="GuideHelpTopicManager.cs" />
+    <Compile Include="MessageManager.cs" />
+    <Compile Include="NetworkManager.cs" />
+    <Compile Include="RelatedRequestTypeManager.cs" />
+    <Compile Include="GuidelineManager.cs" />
+    <Compile Include="DeviceConfigManager.cs" />
+    <Compile Include="DeviceSoftwareManager.cs" />
+    <Compile Include="DeviceManager.cs" />
+    <Compile Include="ReportManager\RequestTypeReportManager.cs" />
+    <Compile Include="RequestManager.cs" />
+    <Compile Include="PriorityManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestTypeManager.cs" />
+    <Compile Include="RoleAllowChatManager.cs" />
+    <Compile Include="Site\BaseForm.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\SiteService.cs" />
+    <Compile Include="Site\UserInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Helpdesk.BusinessObjects\Helpdesk.BusinessObjects.csproj">
+      <Project>{A9CFE649-A326-462D-BF83-3E3570933EC0}</Project>
+      <Name>Helpdesk.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Helpdesk.Common\Helpdesk.Common.csproj">
+      <Project>{40214505-1B98-42A7-894D-F87B866445BB}</Project>
+      <Name>Helpdesk.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Helpdesk.DAL\Helpdesk.DAL.csproj">
+      <Project>{A9D41FAD-1686-4423-A822-62514ED50787}</Project>
+      <Name>Helpdesk.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infra.Common\Infra.Common.csproj">
+      <Project>{8C32638B-4CA9-442F-BFD3-29413007675C}</Project>
+      <Name>Infra.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
